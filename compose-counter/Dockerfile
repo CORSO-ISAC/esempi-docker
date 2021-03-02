@@ -3,7 +3,7 @@ FROM alpine
 RUN apk update && \
     apk upgrade
 
-RUN apk add python3 && \
+RUN apk add python3 py3-pip && \
     pip3 install flask redis
 
 WORKDIR /data
